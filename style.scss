@@ -21,10 +21,15 @@ h1 {
 #landing {
    background-color: #E7E1D4;
    height: 80vh;
+
+   background-image: url("images/landing.png");
+   background-position: center bottom;
+   background-size: 70%;
+   background-repeat: no-repeat;
 }
 
 #logo {
-   margin-top: 20vh;
+   margin-top: 0vh;
 }
 
 #menu {
