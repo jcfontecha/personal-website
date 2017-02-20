@@ -1,13 +1,21 @@
-nav ul {
-  margin: 0;
-  padding: 6px;
-  list-style: none;
+/******* HEADER *********/
+h1 {
+  color: #F1433F;
+  font-family: azo-sans-web, sans-serif;
+  text-transform: uppercase;
   font-weight: bold; }
 
-nav li {
-  display: inline-block; }
+#landing {
+  background-color: #E7E1D4;
+  height: 80vh; }
 
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
+#logo {
+  margin-top: 20vh; }
+
+#menu {
+  margin-top: 20px; }
+
+#menu div ul li a {
+  font-family: azo-sans-web, sans-serif;
+  color: black;
+  font-weight: bold; }

@@ -1,18 +1,33 @@
-$padding: 6px;
+// Fonts
+$heading_font_family: azo-sans-web, sans-serif;
 
-nav {
-  ul {
-    margin: 0;
-    padding: $padding;
-    list-style: none;
-    font-weight: bold;
-  }
+// Palette colors
+$red: #F1433F;
 
-  li { display: inline-block; }
+/******* HEADER *********/
 
-  a {
-    display: block;
-    padding: $padding 12px;
-    text-decoration: none;
-  }
+h1 {
+   color: $red;
+   font-family: $heading_font_family;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+#landing {
+   background-color: #E7E1D4;
+   height: 80vh;
+}
+
+#logo {
+   margin-top: 20vh;
+}
+
+#menu {
+   margin-top: 20px;
+}
+
+#menu div ul li a {
+   font-family: $heading_font_family;
+   color: black;
+   font-weight: bold;
 }
