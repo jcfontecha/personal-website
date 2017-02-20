@@ -3,6 +3,10 @@ $heading_font_family: azo-sans-web, sans-serif;
 
 // Palette colors
 $red: #F1433F;
+$light_blue: #70B7BA;
+
+// Sizes
+$bootstrap_xs: 768px;
 
 /******* HEADER *********/
 
@@ -11,6 +15,7 @@ h1 {
    font-family: $heading_font_family;
    text-transform: uppercase;
    font-weight: bold;
+   font-size: 48px;
 }
 
 #landing {
@@ -23,11 +28,31 @@ h1 {
 }
 
 #menu {
-   margin-top: 20px;
-}
+   margin: 30px 20px;
 
-#menu div ul li a {
-   font-family: $heading_font_family;
-   color: black;
-   font-weight: bold;
+   .navbar-toggle .icon-bar {
+      background-color: black;
+   }
+
+   li a {
+      font-family: $heading_font_family;
+      color: black;
+      font-weight: bold;
+      padding: 5px !important;
+      margin: 0 10px 0 10px; 
+
+      @media screen and (max-width: $bootstrap_xs) {
+         margin: 10px !important;
+      }    
+   }
+
+   li.active a, li a:hover {
+      background: none;
+      border-bottom: 4px solid $light_blue;
+
+      @media screen and (max-width: $bootstrap_xs) {
+         border-bottom: none !important;
+         color: $light_blue;
+      }
+   }
 }

@@ -3,7 +3,8 @@ h1 {
   color: #F1433F;
   font-family: azo-sans-web, sans-serif;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 48px; }
 
 #landing {
   background-color: #E7E1D4;
@@ -13,9 +14,22 @@ h1 {
   margin-top: 20vh; }
 
 #menu {
-  margin-top: 20px; }
-
-#menu div ul li a {
-  font-family: azo-sans-web, sans-serif;
-  color: black;
-  font-weight: bold; }
+  margin: 30px 20px; }
+  #menu .navbar-toggle .icon-bar {
+    background-color: black; }
+  #menu li a {
+    font-family: azo-sans-web, sans-serif;
+    color: black;
+    font-weight: bold;
+    padding: 5px !important;
+    margin: 0 10px 0 10px; }
+    @media screen and (max-width: 768px) {
+      #menu li a {
+        margin: 10px !important; } }
+  #menu li.active a, #menu li a:hover {
+    background: none;
+    border-bottom: 4px solid #70B7BA; }
+    @media screen and (max-width: 768px) {
+      #menu li.active a, #menu li a:hover {
+        border-bottom: none !important;
+        color: #70B7BA; } }
