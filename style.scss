@@ -8,28 +8,67 @@ $light_blue: #70B7BA;
 // Sizes
 $bootstrap_xs: 768px;
 
-/******* HEADER *********/
+h1, h2 {
+   font-family: $heading_font_family;
+   font-weight: bold;
+}
 
 h1 {
    color: $red;
-   font-family: $heading_font_family;
    text-transform: uppercase;
-   font-weight: bold;
    font-size: 48px;
 }
 
+h2 {
+   font-size: 40px;
+}
+
+/******* HEADER *********/
+
 #landing {
    background-color: #E7E1D4;
-   height: 80vh;
+}
 
-   background-image: url("images/landing.png");
-   background-position: center bottom;
-   background-size: 70%;
-   background-repeat: no-repeat;
+#landing-flex {
+   height: 70vh;
+   max-height: 700px;
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (max-width: $bootstrap_xs) {
+      max-height: 350px;
+   }
 }
 
 #logo {
-   margin-top: 0vh;
+   flex: 1;
+   text-align: center;
+   vertical-align: middle;
+
+   display: flex;
+   justify-content: center;
+
+   h1 {
+      align-self: center;
+   }
+}
+
+#landing-image-container {
+   flex: 3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+#landing-image {
+   flex-shrink: 0;
+   min-width: 100%;
+   min-height: 100%;
+   background-image: url("images/landing.png");
+   background-position: center bottom;
+   background-size: auto 90%;
+   background-repeat: no-repeat;
 }
 
 #menu {
@@ -43,7 +82,7 @@ h1 {
       font-family: $heading_font_family;
       color: black;
       font-weight: bold;
-      padding: 5px !important;
+      padding: 6px !important;
       margin: 0 10px 0 10px; 
 
       @media screen and (max-width: $bootstrap_xs) {
@@ -59,5 +98,20 @@ h1 {
          border-bottom: none !important;
          color: $light_blue;
       }
+   }
+}
+
+/************** SECTIONS **************/
+
+#about-me {
+   h2 {
+      color: $light_blue;
+   }
+
+   .profile-picture {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      background-color: blue;
    }
 }
