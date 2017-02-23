@@ -103,6 +103,14 @@ h2 {
 
 /************** SECTIONS **************/
 
+.right-side {
+   
+}
+
+.left-side {
+   
+}
+
 #about-me {
    h2 {
       color: $light_blue;
@@ -112,6 +120,8 @@ h2 {
       width: 140px;
       height: 140px;
       border-radius: 70px;
-      background-color: blue;
+      background-image: url("images/jcfontecha.jpg");
+      background-size: auto 100%;
+      background-repeat: no-repeat;
    }
 }
