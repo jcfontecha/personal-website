@@ -40,10 +40,6 @@ h2 {
   align-items: center;
   overflow: hidden; }
 
-.landing-image-item {
-  display: flex;
-  flex: 1; }
-
 #landing-image {
   display: flex;
   flex: 1;
