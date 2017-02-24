@@ -35,11 +35,18 @@ h2 {
 #landing-image-container {
   flex: 3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden; }
 
+.landing-image-item {
+  display: flex;
+  flex: 1; }
+
 #landing-image {
+  display: flex;
+  flex: 1;
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
