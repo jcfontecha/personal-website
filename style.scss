@@ -1,5 +1,6 @@
 // Fonts
 $heading_font_family: azo-sans-web, sans-serif;
+$body_font_family: chaparral-pro, serif;
 
 // Palette colors
 $red: #F1433F;
@@ -7,6 +8,13 @@ $light_blue: #70B7BA;
 
 // Sizes
 $bootstrap_xs: 768px;
+
+body {
+   font-family: $body_font_family;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25px;
+}
 
 h1, h2 {
    font-family: $heading_font_family;
@@ -21,6 +29,8 @@ h1 {
 
 h2 {
    font-size: 40px;
+   margin-bottom: 20px;
+   margin-top: 0px;
 }
 
 /******* HEADER *********/
@@ -76,6 +86,7 @@ h2 {
 
 #menu {
    margin: 30px 20px;
+   font-size: 0.9em;
 
    .navbar-toggle .icon-bar {
       background-color: black;
@@ -106,25 +117,94 @@ h2 {
 
 /************** SECTIONS **************/
 
-.right-side {
+a.jcf-button {
+   width: 220px;
+   border-radius: 0px;
+   border: solid 3px black;
+   font-family: $heading_font_family;
+   font-weight: bold;
+   font-size: 1em;
+   color: black;
+   margin-top: 20px;
+
+   @media screen and (max-width: $bootstrap_xs) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+a.jcf-button:hover {
+   color: white;
+   background-color: black;
+}
+
+.image-side {
+   margin: 20px auto 20px auto;
+}
+
+.text-side {
    
 }
 
-.left-side {
-   
+.section-row {
+   padding: 30px 0 30px 0;
 }
 
 #about-me {
    h2 {
       color: $light_blue;
+      @media screen and (max-width: $bootstrap_xs) {
+         text-align: center;
+      }
+   }
+
+   a.jcf-button {
+      border-color: $light_blue;
+      color: $light_blue;
+   }
+
+   a.jcf-button:hover {
+      background-color: $light_blue;
+      color: white;
    }
 
    .profile-picture {
-      width: 140px;
-      height: 140px;
-      border-radius: 70px;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
       background-image: url("images/jcfontecha.jpg");
       background-size: auto 100%;
       background-repeat: no-repeat;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+#software-engineer {
+   background-color: $red;
+   color: white;
+
+   h2 {
+      color: white; 
+   }
+
+   a.jcf-button {
+      border-color: white;
+      color: white;
+   }
+
+   a.jcf-button:hover {
+      background-color: white;
+      color: $red;
+   }
+
+   #software-dev-image {
+      width: 100%;
+      height: 200px;
+      background-image: url("images/software-dev.png");
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
    }
 }
